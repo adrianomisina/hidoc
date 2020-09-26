@@ -1,0 +1,578 @@
+body, html {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+header{
+    height:80px;
+    background-color:#ffffff;
+}
+
+.box-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box-menu img {
+    margin-top: -16px;
+    margin-right: 30px;
+    width: 70px;
+    height: auto;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-right: -26px;
+    margin-left: -24px;
+}
+
+.menumobile{
+    display: none;
+    width:40px;
+    height:40px;
+    margin-bottom: 40px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color:#00ADFF;
+}
+
+nav ul, nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    display: flex;
+    margin-left: 47px;
+    text-decoration: none;
+    color: #00ADFF;
+    margin-right: 50px;
+    border-bottom: 2px solid #ffffff;
+    font-size: 14px;
+}
+
+nav a:hover{
+    
+    color:#066886;
+    text-decoration: none;
+    border-bottom: 2px solid #066886;
+    transition:all 0.5s linear;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #00ADFF;
+    border-color: #00ADFF;
+}
+
+
+#bg-1 {
+    background-image: url("bg3.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    background-repeat: no-repeat;
+}
+
+.banner .slide {
+    max-width: 100%;
+    height:100%;
+    display:inline-block;
+    background-color:rgba(59, 59, 59, 0.17);
+}
+
+.logo-sub-title h1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    color:rgb(243, 243, 243);
+    text-shadow: 1px 1px rgb(27, 27, 27);
+    font-weight:600;
+}
+
+
+.logo-slide-img img {
+    display: block;
+    width: 120px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 15px;
+}
+
+
+.apps-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps-store img {
+    width: 65%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin-left: 15px;   
+}
+
+/* Sections */
+
+.sobre-content-title,
+.seguranca-dados-content-title {
+    text-align: center;
+    padding-top: 40px;
+    color: #00ADFF
+}
+
+.sobre-content-title:hover,
+.seguranca-dados-content-title:hover {
+    color:#066886;
+    transition:all 0.5s linear;
+}
+
+.sobre-content-app,
+.seguranca-dados-content-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.sobre-content-app-stores,
+.seguranca-dados-content-app-stores {
+    margin-right: 60px;
+}
+
+.sobre-content-app-logo img,
+.seguranca-dados-content-app-logo img {
+    width: 55%;
+    margin-left: 20px;
+}
+
+.sobre-content-app p,
+.seguranca-dados-content-app p {
+    color: #00ADFF;
+    font-weight: 600;
+    padding-right: 25px;
+}
+
+.sobre-content-app p:hover,
+.seguranca-dados-content-app p:hover {
+    color:#066886;
+    transition:all 0.5s linear;
+}
+
+.sobre-content-app-stores img,
+.seguranca-dados-content-app-stores img {
+    width:35%;
+}
+
+.sobre-content-desc,
+.seguranca-dados-content-desc {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    color:#066886;
+    margin-top: 20px;
+}
+
+.sobre-content-desc p,
+.seguranca-dados-content-desc p {
+    margin-left: 60px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.mockup img {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.seguranca-dados-security img {
+    width: 76%;
+    margin-bottom: 28px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+#como-funciona {
+    background-color:#e7e7e73a;
+}
+
+.agendamento-consulta img {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conecte-saude {
+    color: #00ADFF;
+}
+
+.conecte-saude h3 {
+    font-weight: lighter;
+}
+
+.conecte-saude h3:hover{
+    color:#066886;
+}
+
+.conecte-saude p {
+    color:#066886;
+}
+
+.button-action {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.cel-screen-app {
+    margin-top: 40px;
+}
+
+
+.cel-screen-app img {
+    width: 45%;
+}
+
+.image_default-content {
+    display: inline-block;
+    color:#066886;
+}
+
+.image_default-content img {
+    width: 33%;
+}
+
+.image_triagem-content,
+.image_consulta-content,
+.image_saude-content {
+    color:#066886;
+    margin-top: 70px;
+}
+
+.image_triagem-content img,
+.image_consulta-content img,
+.image_saude-content img {
+    width: 33%;
+    margin: auto;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+
+    .body, html, section, main {
+        margin:auto;
+        padding:auto;
+    }
+
+    header{
+        width:auto;
+        height: auto;
+        background-color: #fff;
+    }
+   
+    header.container {
+       flex-direction: column;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul, nav li {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        list-style: none;
+        margin-right:0px;
+        padding-right: 0px;
+        padding-left: 0px;
+}
+
+   nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #00ADFF;
+    border-bottom: none;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    margin-left: auto;
+
+    }
+
+    nav a:hover{
+        
+        color: #066886;
+        text-decoration: none;
+        border-bottom: none;
+        transition: all 1s linear;
+    }
+
+   .logo img {
+        padding: 5px;
+        margin: 0;
+   }
+
+   .menu {
+       margin:0px;
+   }
+
+   .menumobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    }
+
+    #bg-1 {
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+    }
+
+    .box-menu {
+        display: flex;
+        padding-left: 10px;
+        justify-content: left;
+    }
+
+ 
+    .box-menu img {
+        width: 40%;
+        height: auto;
+    }
+
+    .apps-store img {
+        width: 90px;
+        padding-bottom: 28px;
+        padding-left: 23px;
+        margin-left: 10px;
+    }
+
+
+    .logo-slide-img img {
+        display: block;
+        width: 42px;
+        float: right;
+        margin:auto;
+    }
+
+    .logo-sub-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .logo-sub-title h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14px;
+        color: #fff;
+        text-shadow: 1px 1px rgb(31, 31, 31);
+        font-weight: 300;
+        font-size: larger;
+    }
+
+    .logo-sub-title img {
+        width: 35%;
+        display: flex;
+    }
+
+    .apps-store img {
+        width: 60%;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        margin-left: 25px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #00ADFF;
+        border-color: #00ADFF;
+        margin: 0px;
+    }
+
+    .sobre-content-title,
+    .seguranca-dados-content-title {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin-top: 15px;
+        margin-bottom: -28px;
+        color: #00ADFF;
+    }
+
+    .sobre-content-app-stores,
+    .seguranca-dados-content-app-stores {
+        margin: auto;
+    }
+
+    .sobre-content-app-stores img,
+    .seguranca-dados-content-app-stores img {
+        width: 25%;
+    }
+
+    .sobre-content-app-logo img,
+    .seguranca-dados-content-app-logo img {
+        width: 20%;
+        margin-top: -22px;
+        margin: auto;
+    }
+
+    .sobre-content-app,
+    .seguranca-dados-content-app {
+        display: block;
+    }
+
+    .sobre-content-app p,
+    .seguranca-dados-content-app p {
+        color: #00ADFF;
+        font-weight: 600;
+        padding-right: 0px;
+    }
+
+    .sobre-content-desc,
+    .seguranca-dados-content-desc {
+        display: block;
+        text-align: justify;
+        justify-content: center;
+        color: #00ADFF;
+    }
+
+    .sobre-content-desc p,
+    .seguranca-dados-content-desc p {
+        margin-top: -25px;
+        margin-bottom: 25px;
+        font-size: 16px;
+        padding: 8px;
+        line-height: 24px;
+        margin-left: 0px;
+        color: #066886;
+    }
+
+    .mockup img {
+        width: 100%;
+    }
+
+    .seguranca-dados-security img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .agendamento-consulta img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #00ADFF;
+        border-color: #00ADFF;
+        margin: 7px;
+    }
+
+    .cel-screen-app img {
+        width: 100%;
+    }
+
+    .conecte-saude p {
+        color: #066886;
+        text-align: justify;
+    }
+
+    .image_default-content {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        color: #066886;
+    }
+
+    .image_default-content h2 {
+        text-align: center;
+    }
+
+    .image_default-content p {
+        text-align: justify;
+    }
+
+    .image_default-content img {
+        width: 38%;
+        margin-left: 8%;
+    }
+
+    .image_triagem-content {
+        display: block;
+        align-items: center;
+        color: #066886;
+    }
+
+    .image_triagem-content h2,
+    .image_consulta-content h2,
+    .image_saude-content h2{
+        text-align: center;
+    }
+
+    .image_triagem-content {
+       display: block;
+        align-items: center;
+        color: #066886;
+        margin: auto;
+    }
+
+    .image_triagem-content,
+    .image_consulta-content,
+    .image_saude-content {
+        color:#066886;
+        margin-top: 20px;
+        text-align: justify;
+}
+
+    .image_triagem-content img,
+    .image_consulta-content img,
+    .image_saude-content img {
+        width: 38%;
+        margin-left: 8%;
+    }
+
+    
+  
+    
+}
