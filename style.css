@@ -132,14 +132,16 @@ nav a:hover{
 /* Sections */
 
 .sobre-content-title,
-.seguranca-dados-content-title {
+.seguranca-dados-content-title,
+.cadastre-se-title {
     text-align: center;
     padding-top: 40px;
     color: #00ADFF
 }
 
 .sobre-content-title:hover,
-.seguranca-dados-content-title:hover {
+.seguranca-dados-content-title:hover,
+.cadastre-se-title:hover {
     color:#066886;
     transition:all 0.5s linear;
 }
@@ -210,7 +212,8 @@ nav a:hover{
     border-radius: 3px;
 }
 
-#como-funciona {
+#como-funciona,
+#cadastre-se {
     background-color:#e7e7e73a;
 }
 
@@ -281,12 +284,57 @@ button {
     margin: auto;
 }
 
+/*form*/
+
+form {
+    text-align: center;
+}
+
+.nome-email input{
+    margin-right: 140px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.mensagem-form textarea {
+    width: 695px;
+    height: 200px;
+    resize: none;
+}
+
+.botao-form {
+    color: #fff;
+    background-color: #00ADFF;
+    border-color: #00ADFF;
+    margin: 5px;
+    border-style: none;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px; 
+}
+
+/*Footer*/
+
+.logo-footer {
+    width: 40%;
+}
+
+.logo-footer-content p {
+    text-align: left;
+}
+
+.menu-footer a{
+    text-decoration: none;
+}
+
+.menu-footer a:hover {
+    color:#066886;
+}
 
 
 
-
-
-@media (max-width:768px){
+@media (max-width:445px){
 
     .body, html, section, main {
         margin:auto;
@@ -530,7 +578,7 @@ button {
     }
 
     .image_default-content p {
-        text-align: justify;
+        text-align: center;
     }
 
     .image_default-content img {
@@ -572,7 +620,324 @@ button {
         margin-left: 8%;
     }
 
+    .nome-email input {
+        margin: auto;
+        width: 100%;
+    }
+
+    .mensagem-form textarea {
+        width: 207px;
+        height: auto;
+        resize: none;
+        margin-top: -14px;
+    }  
+}
+
+/*Responsive for Tablet */
+
+@media (min-width:450px) and (max-width:992px) {
     
+    .body, html, section, main {
+        margin:auto;
+        padding:auto;
+    }
+
+    header{
+        width:auto;
+        height: auto;
+        background-color: #fff;
+    }
+   
+    header.container {
+       flex-direction: column;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul, nav li {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        list-style: none;
+        margin-right:0px;
+        padding-right: 0px;
+        padding-left: 0px;
+}
+
+   nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #00ADFF;
+    border-bottom: none;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    margin-left: auto;
+
+    }
+
+    nav a:hover{
+        
+        color: #066886;
+        text-decoration: none;
+        border-bottom: none;
+        transition: all 1s linear;
+    }
+
+   .logo img {
+        padding: 5px;
+        margin: 0;
+   }
+
+   .menu {
+       margin:0px;
+   }
+
+   .menumobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    }
+
+    #bg-1 {
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+    }
+
+    .box-menu {
+        display: flex;
+        padding-left: 10px;
+        justify-content: left;
+    }
+
+ 
+    .box-menu img {
+        width: 40%;
+        height: auto;
+    }
+
+    .apps-store img {
+        width: 90px;
+        padding-bottom: 28px;
+        padding-left: 23px;
+        margin-left: 10px;
+    }
+
+
+    .logo-slide-img img {
+        display: block;
+        width: 42px;
+        float: right;
+        margin:auto;
+    }
+
+    .logo-sub-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .logo-sub-title h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14px;
+        color: #fff;
+        text-shadow: 1px 1px rgb(31, 31, 31);
+        font-weight: 300;
+        font-size: larger;
+    }
+
+    .logo-sub-title img {
+        width: 35%;
+        display: flex;
+    }
+
+    .apps-store img {
+        width: 60%;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        margin-left: 25px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #00ADFF;
+        border-color: #00ADFF;
+        margin: 0px;
+    }
+
+    .sobre-content-title,
+    .seguranca-dados-content-title {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin-top: 15px;
+        margin-bottom: -28px;
+        color: #00ADFF;
+    }
+
+    .sobre-content-app-stores,
+    .seguranca-dados-content-app-stores {
+        margin: auto;
+    }
+
+    .sobre-content-app-stores img,
+    .seguranca-dados-content-app-stores img {
+        width: 16%;
+    }
+
+    .sobre-content-app-logo img,
+    .seguranca-dados-content-app-logo img {
+        width: 20%;
+        margin-top: -22px;
+        margin: auto;
+    }
+
+    .sobre-content-app,
+    .seguranca-dados-content-app {
+        display: block;
+    }
+
+    .sobre-content-app p,
+    .seguranca-dados-content-app p {
+        color: #00ADFF;
+        font-weight: 600;
+        padding-right: 0px;
+    }
+
+    .sobre-content-desc,
+    .seguranca-dados-content-desc {
+        display: block;
+        text-align: justify;
+        justify-content: center;
+        color: #00ADFF;
+    }
+
+    .sobre-content-desc p,
+    .seguranca-dados-content-desc p {
+        margin-top: -25px;
+        margin-bottom: 25px;
+        font-size: 16px;
+        padding: 8px;
+        line-height: 24px;
+        margin-left: 0px;
+        color: #066886;
+    }
+
+    .mockup img {
+        width: 93%;
+    }
+
+    .seguranca-dados-security img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .agendamento-consulta img {
+        width: 65%;
+        margin-top: 40px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #00ADFF;
+        border-color: #00ADFF;
+        margin: 7px;
+    }
+
+    .cel-screen-app img {
+        
+        width: 64%;
+        margin-left: 130px;
+        
+    }
+
+    .conecte-saude p {
+        color: #066886;
+        text-align: center;
+    }
+
+    .image_default-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #066886;
+    }
+
+    .image_default-content h2 {
+        text-align: center;
+    }
+
+    .image_default-content p {
+        text-align: center;
+    }
+
+    .image_default-content img {
+        width: 75%;
+        margin-left: 8%;
+    }
+
+    .image_triagem-content h2,
+    .image_consulta-content h2,
+    .image_saude-content h2{
+        text-align: center;
+    }
+
   
-    
+    .image_triagem-content,
+    .image_consulta-content,
+    .image_saude-content {
+        display:block;
+        color:#066886;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .image_triagem-content p,
+    .image_consulta-content p,
+    .image_saude-content p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+
+    .image_triagem-content img,
+    .image_consulta-content img,
+    .image_saude-content img {
+        width: 15%;
+        margin-left: 5px;
+    }
+
+    .nome-email input {
+        margin: auto;
+        width: 100%;
+    }
+
+    .cadastre-se-title {
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        color: #00ADFF;
+    }
+
+    .mensagem-form textarea {
+        width: 420px;
+        height: auto;
+        resize: none;
+    }  
+
 }
