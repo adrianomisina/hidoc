@@ -631,6 +631,10 @@ form {
         resize: none;
         margin-top: -14px;
     }  
+
+    .logo-footer-content p {
+        text-align: center;
+    }
 }
 
 /*Responsive for Tablet */
@@ -939,5 +943,9 @@ form {
         height: auto;
         resize: none;
     }  
+
+    .logo-footer-content p {
+        text-align: justify;
+    }
 
 }
