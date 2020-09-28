@@ -25,8 +25,8 @@ header{
 
 .menu {
     margin-top: 20px;
-    margin-right: -26px;
-    margin-left: -24px;
+    margin-right: -36px;
+    margin-left: -30px;
 }
 
 .menumobile{
@@ -53,7 +53,7 @@ nav ul {
 
 nav a {
     display: flex;
-    margin-left: 47px;
+    margin-left: 16px;
     text-decoration: none;
     color: #00ADFF;
     margin-right: 50px;
@@ -108,10 +108,9 @@ nav a:hover{
 
 .logo-slide-img img {
     display: block;
-    width: 120px;
-    float: right;
-    margin-right: 70px;
-    margin-top: 15px;
+    width: 150px;
+    float: left;
+    margin-left: 190px;
 }
 
 
@@ -213,7 +212,8 @@ nav a:hover{
 }
 
 #como-funciona,
-#cadastre-se {
+#cadastre-se,
+footer {
     background-color:#e7e7e73a;
 }
 
@@ -296,6 +296,10 @@ form {
     width: 100%;
 }
 
+.assunto-form input {
+    margin-right: 490px;
+    width: 100%;
+}
 
 .mensagem-form textarea {
     width: 695px;
@@ -332,7 +336,15 @@ form {
     color:#066886;
 }
 
+.politica-termos-copyright {
+    display: flex;
+    padding-left: 30px;
+    padding-right: -13px;
+    padding-right: -29px;
+    justify-content: space-around;
+}
 
+/* Respomsive for Mobile */
 
 @media (max-width:445px){
 
@@ -622,19 +634,48 @@ form {
 
     .nome-email input {
         margin: auto;
+        margin-top: 15px;
         width: 100%;
     }
 
+    .assunto-form input {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+
     .mensagem-form textarea {
-        width: 207px;
+        width: 210px;
         height: auto;
         resize: none;
         margin-top: -14px;
     }  
 
+    .logo-footer {
+        width: 30%;
+    }
+
     .logo-footer-content p {
         text-align: center;
+        font-size: 80%;
     }
+
+    .menu-footer {
+        font-size: 70%;
+        display: block;
+    }
+
+    .footer-contato {
+        font-size: 70%;
+        display: block;
+    }
+
+    .politica-termos-copyright {
+        display: block;
+        font-size: 70%;
+    }
+
 }
 
 /*Responsive for Tablet */
@@ -917,8 +958,6 @@ form {
         font-size: 15px;
     }
 
-
-
     .image_triagem-content img,
     .image_consulta-content img,
     .image_saude-content img {
@@ -930,6 +969,12 @@ form {
         margin: auto;
         width: 100%;
     }
+
+    .assunto-form input {
+        width: 100%;
+        margin-right: 210px;
+    }
+
 
     .cadastre-se-title {
         text-align: center;
@@ -946,6 +991,16 @@ form {
 
     .logo-footer-content p {
         text-align: justify;
+        font-size: 80%;
     }
 
+    .menu-footer,
+    .footer-contato {
+        font-size: 80%;
+    }
+
+    .politica-termos-copyright {
+        display: flex;
+        font-size: 70%;
+    }
 }
