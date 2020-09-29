@@ -130,7 +130,7 @@ nav a:hover{
 
 /* Sections */
 
-.sobre-title h5 {
+.sobre-title h4 {
     text-align: center;
     color: #00ADFF;
     font-weight: lighter;
@@ -159,9 +159,9 @@ nav a:hover{
 
 .sobre-content-app {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .seguranca-dados-content-app {
@@ -172,7 +172,7 @@ nav a:hover{
 
 .sobre-content-app-stores {
     display: block;
-    padding-top: 18px;  
+    
 }
 
 .seguranca-dados-content-app-stores {
@@ -199,11 +199,11 @@ nav a:hover{
 }
 
 .sobre-content-app-stores img{
-    width:35%;
+    width:15%;
 }
 
 .seguranca-dados-content-app-stores img {
-    width: 17%;
+    width: 15%;
 }
 
 .sobre-content-desc,
@@ -217,9 +217,9 @@ nav a:hover{
 
 .sobre-content-desc p {
     margin-left: 60px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 26px;
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: lighter;
 }
 
@@ -233,7 +233,7 @@ nav a:hover{
 
 .mockup img {
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .seguranca-dados-security img {
@@ -269,6 +269,9 @@ footer {
 
 .conecte-saude p {
     color:#066886;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: lighter;
 }
 
 .button-action {
@@ -285,7 +288,7 @@ button {
 }
 
 .cel-screen-app {
-    margin-top: 40px;
+    margin-top: 16px;
 }
 
 
@@ -293,24 +296,28 @@ button {
     width: 30%;
 }
 
-.image_default-content {
-    display: inline-block;
-    color:#066886;
-    margin-left: 60px;
-}
 
-.image_default-content img {
-    width: auto;
-}
-
+.image_default-content,
 .image_triagem-content,
 .image_consulta-content,
 .image_saude-content {
-    color:#066886;
-    margin-top: 90px;
-    margin-left: 60px;
+    color: #066886;
+    margin-top: 100px;
+    margin-left: 30px;
+    text-align: left;
 }
 
+.image_default-content p,
+.image_triagem-content p,
+.image_consulta-content p,
+.image_saude-content p {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: lighter;
+
+}
+
+.image_default-content img,
 .image_triagem-content img,
 .image_consulta-content img,
 .image_saude-content img {
@@ -331,12 +338,12 @@ form {
 }
 
 .assunto-form input {
-    margin-right: 490px;
+    margin-right: 493px;
     width: 100%;
 }
 
 .mensagem-form textarea {
-    width: 695px;
+    width: 700px;
     height: 200px;
     resize: none;
 }
@@ -359,7 +366,7 @@ form {
 }
 
 .logo-footer-content p {
-    text-align: left;
+    text-align: justify;
 }
 
 .menu-footer a{
@@ -612,6 +619,7 @@ form {
     .cel-screen-app img {
         width: 100%;
         padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .conecte-saude p {
@@ -663,7 +671,6 @@ form {
     .image_consulta-content,
     .image_saude-content {
         color:#066886;
-        margin-top: 20px;
         text-align: center;
 }
 
@@ -950,25 +957,19 @@ form {
         margin: 7px;
     }
 
+    .cel-screen-app {
+        display: flex;
+    }
+
     .cel-screen-app img {
-        
         width: 45%;
-        margin: auto;
-        
+        margin: auto; 
     }
 
     .conecte-saude p {
         color: #066886;
         text-align: center;
         font-size: 20px;
-    }
-
-    .image_default-content {
-        display: block;
-        color: #066886;
-        margin-top: 20px;
-        text-align: center;
-        margin: auto;
     }
 
     .image_default-content h2 {
@@ -993,13 +994,13 @@ form {
     }
 
   
+    .image_default-content,
     .image_triagem-content,
     .image_consulta-content,
     .image_saude-content {
-        display: block;
+        display: inline-block;
         color: #066886;
         margin-top: 20px;
-        margin-right: 55px;
         text-align: center;
     }
 
@@ -1007,7 +1008,7 @@ form {
     .image_consulta-content p,
     .image_saude-content p {
         text-align: center;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .image_triagem-content img,

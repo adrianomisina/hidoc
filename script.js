@@ -1,6 +1,5 @@
 //Ação de On Click //
 
-
 function clickTriagem() {
 
     document.getElementById("image-default").style.display = 'none';
