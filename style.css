@@ -664,14 +664,14 @@ form {
     .image_saude-content {
         color:#066886;
         margin-top: 20px;
-        text-align: justify;
+        text-align: center;
 }
 
     .image_triagem-content img,
     .image_consulta-content img,
     .image_saude-content img {
         width: 40%;
-        margin-left: 8%;
+        margin-left: 5%;
     }
 
     .nome-email input {
